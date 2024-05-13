@@ -13,6 +13,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="./" />
+					<Add directory="nodes" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +24,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="nodes" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +36,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="DoubleLinkedList.h" />
+		<Unit filename="DoubleLinkedList.tpp" />
+		<Unit filename="SinglyLinkedList.h" />
+		<Unit filename="SinglyLinkedList.tpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="nodes/DoubleNode.h" />
+		<Unit filename="nodes/DoubleNode.tpp" />
+		<Unit filename="nodes/SingleNode.h" />
+		<Unit filename="nodes/SingleNode.tpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

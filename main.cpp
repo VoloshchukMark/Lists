@@ -2,9 +2,28 @@
 
 #include "SinglyLinkedList.h"
 #include "DoubleLinkedList.h"
+#include "Queue.h"
 
 using namespace std;
 using namespace single_linked;
+
+class Mark
+{
+private:
+    string name;
+    int age;
+public:
+    void displayName() {cout<<name<<endl;}
+    Mark(string newName) : name{newName} {}
+    Mark() : name{"Mark"} {}
+
+    friend std::ostream& operator<<(std::ostream& os, Mark& obj)
+    {
+        os << obj.name;
+    return os;
+}
+};
+
 
 int main()
 {
@@ -12,10 +31,20 @@ int main()
 //    list.insertAtEnd("12");
 //    list.insertAtEnd("Mark");
 //    list.insertAtEnd("999");
-//    cout<<list;
+//    cout<<list<<endl;
 //    list.insertAtTheBeginning("Piwpaw");
-//    list.removeAtIndex(3);
-//    cout<<list;
+//    cout<<list<<endl;
+//    cout<<list[2]<<endl;
+//    list.removeAtIndex(2);
+//    cout<<list<<endl;
+//    cout<<list[2]<<endl;
+
+//Queue<string> q;
+//q.enqueue("Mark");
+//q.enqueue("Smth");
+//cout<<q.peek()<<endl;
+//q.dequeue();
+//cout<<q.peek()<<endl;
 
 //    SinglyLinkedList<int> list1;
 //    DoubleLinkedList<SinglyLinkedList<int>> dList;

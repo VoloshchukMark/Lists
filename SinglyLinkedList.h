@@ -22,7 +22,7 @@ public:
     void insertAtTheBeginning(T value);
     void insertAtEnd(T value);
     void insertAtIndex(int index, T value);
-    int operator[](int index) const;
+    T operator[](int index) const;
     void removeFromBeginning();
     void removeFromEnd();
     void removeAtIndex(int index);

@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1715610076 source:d:\study\programming\myprojects\lists\lists\main.cpp
+1715617816 source:d:\study\programming\myprojects\lists\lists\main.cpp
 	<iostream>
 	"SinglyLinkedList.h"
 	"DoubleLinkedList.h"
+	"Queue.h"
 
 1715332074 source:d:\study\programming\myprojects\lists\lists\nodes\singlenode.cpp
 	"SingleNode.h"
@@ -14,7 +15,7 @@
 1715519110 source:d:\study\programming\myprojects\lists\lists\singlylinkedlist.cpp
 	"SinglyLinkedList.h"
 
-1715608863 d:\study\programming\myprojects\lists\lists\singlylinkedlist.h
+1715611661 d:\study\programming\myprojects\lists\lists\singlylinkedlist.h
 	"../nodes/SingleNode.h"
 	<iostream>
 	"SinglyLinkedList.tpp"
@@ -30,7 +31,7 @@
 1715520502 d:\study\programming\myprojects\lists\lists\nodes\singlenode.tpp
 	"../nodes/SingleNode.h"
 
-1715526481 d:\study\programming\myprojects\lists\lists\singlylinkedlist.tpp
+1715611661 d:\study\programming\myprojects\lists\lists\singlylinkedlist.tpp
 	<iostream>
 	"SinglyLinkedList.h"
 
@@ -40,4 +41,13 @@
 1715610121 d:\study\programming\myprojects\lists\lists\doublelinkedlist.tpp
 	<iostream>
 	"DoubleLinkedList.h"
+
+1715617864 d:\study\programming\myprojects\lists\lists\queue.h
+	"../nodes/DoubleNode.h"
+	<iostream>
+	"Queue.tpp"
+
+1715617864 d:\study\programming\myprojects\lists\lists\queue.tpp
+	<iostream>
+	"Queue.h"
 

@@ -96,7 +96,7 @@ void SinglyLinkedList<T>::removeAtIndex(int index)
 }
 
 template <typename T>
-int SinglyLinkedList<T>::operator[](int index) const
+T SinglyLinkedList<T>::operator[](int index) const
 {
     checkIndex(index);
     Node<T> *current = head.get();

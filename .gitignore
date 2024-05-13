@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+
+# Just for sure
+*.o
+*.exe
+*.pdb
+*.ilk
+*.aps
+*.ipch
+*.pch
+*.suo
+*.user
+*.log
+*.tlog

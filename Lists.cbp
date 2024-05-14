@@ -38,8 +38,14 @@
 		</Compiler>
 		<Unit filename="DoubleLinkedList.h" />
 		<Unit filename="DoubleLinkedList.tpp" />
+		<Unit filename="InputRestrictedQueue.h" />
+		<Unit filename="InputRestrictedQueue.tpp" />
+		<Unit filename="Queue.h" />
+		<Unit filename="Queue.tpp" />
 		<Unit filename="SinglyLinkedList.h" />
 		<Unit filename="SinglyLinkedList.tpp" />
+		<Unit filename="Stack.h" />
+		<Unit filename="Stack.tpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="nodes/DoubleNode.h" />
 		<Unit filename="nodes/DoubleNode.tpp" />

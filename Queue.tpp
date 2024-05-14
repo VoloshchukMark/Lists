@@ -20,14 +20,18 @@ void Queue<T>::enqueue(T data)
 }
 
 template<typename T>
-void Queue<T>::dequeue() {
+void Queue<T>::dequeue()
+{
     if (front == nullptr) {
-        std::cout << "Черга порожня." << std::endl;
+        cout<<"The queue is empty."<<endl;
         return;
     }
+    T frontData = front->data;
     front = std::move(front->next);
     if (front == nullptr)
         rear = nullptr;
+    cout<<"Object '"<<frontData<<"' has been removed from queue."<<endl;
+    return;
 }
 
 template<typename T>
@@ -43,6 +47,7 @@ T Queue<T>::peek()
 
 
 template<typename T>
-bool Queue<T>::isEmpty() {
+bool Queue<T>::isEmpty()
+{
     return (front == nullptr);
 }

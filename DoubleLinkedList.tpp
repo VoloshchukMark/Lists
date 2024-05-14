@@ -19,7 +19,8 @@ void DoubleLinkedList<T>::checkIndex(int index) const
 }
 
 template<typename T>
-void DoubleLinkedList<T>::insertAtBeginning(T value) {
+void DoubleLinkedList<T>::insertAtBeginning(T value)
+{
     shared_ptr<double_node::Node<T>> newNode = make_shared<double_node::Node<T>>(value);
     if (!head) {
         head = tail = newNode;
@@ -32,7 +33,8 @@ void DoubleLinkedList<T>::insertAtBeginning(T value) {
 }
 
 template<typename T>
-void DoubleLinkedList<T>::insertAtEnd(T value) {
+void DoubleLinkedList<T>::insertAtEnd(T value)
+{
     shared_ptr<double_node::Node<T>> newNode = make_shared<double_node::Node<T>>(value);
     if (!tail) {
         head = tail = newNode;
@@ -45,7 +47,8 @@ void DoubleLinkedList<T>::insertAtEnd(T value) {
 }
 
 template<typename T>
-void DoubleLinkedList<T>::insertAtIndex(int index, T value) {
+void DoubleLinkedList<T>::insertAtIndex(int index, T value)
+{
     checkIndex(index);
     if (index == 0) {
         insertAtBeginning(value);
@@ -66,7 +69,8 @@ void DoubleLinkedList<T>::insertAtIndex(int index, T value) {
 }
 
 template<typename T>
-T DoubleLinkedList<T>::operator[](int index) const {
+T DoubleLinkedList<T>::operator[](int index) const
+{
     checkIndex(index);
     shared_ptr<double_node::Node<T>> current = head;
     for (int i = 0; i <= index - 1; i++) {
@@ -76,7 +80,8 @@ T DoubleLinkedList<T>::operator[](int index) const {
 }
 
 template<typename T>
-void DoubleLinkedList<T>::removeFromBeginning() {
+void DoubleLinkedList<T>::removeFromBeginning()
+{
     if (!head) {
         return;
     }
@@ -90,7 +95,8 @@ void DoubleLinkedList<T>::removeFromBeginning() {
 }
 
 template<typename T>
-void DoubleLinkedList<T>::removeFromEnd() {
+void DoubleLinkedList<T>::removeFromEnd()
+{
     if (!tail) {
         return;
     }
@@ -104,7 +110,8 @@ void DoubleLinkedList<T>::removeFromEnd() {
 }
 
 template<typename T>
-void DoubleLinkedList<T>::removeAtIndex(int index) {
+void DoubleLinkedList<T>::removeAtIndex(int index)
+{
     checkIndex(index);
     if (index == 0) {
         head = head->next;
@@ -128,7 +135,8 @@ void DoubleLinkedList<T>::removeAtIndex(int index) {
 }
 
 template<typename T>
-bool DoubleLinkedList<T>::search(T value) const {
+bool DoubleLinkedList<T>::search(T value) const
+{
     shared_ptr<double_node::Node<T>> current = head;
     while (current) {
         if (current->data == value) {
@@ -140,6 +148,7 @@ bool DoubleLinkedList<T>::search(T value) const {
 }
 
 template<typename T>
-int DoubleLinkedList<T>::getSize() const {
+int DoubleLinkedList<T>::getSize() const
+{
     return size;
 }

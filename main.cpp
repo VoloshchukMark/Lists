@@ -3,6 +3,8 @@
 #include "SinglyLinkedList.h"
 #include "DoubleLinkedList.h"
 #include "Queue.h"
+#include "Stack.h"
+#include "InputRestrictedQueue.h"
 
 using namespace std;
 using namespace single_linked;
@@ -21,12 +23,43 @@ public:
     {
         os << obj.name;
     return os;
+
 }
 };
 
 
 int main()
 {
+
+    InputRestrictedQueue<int> t;
+    t.insertAtEnd(12);
+    t.insertAtEnd(431);
+    t.insertAtEnd(654);
+    t.insertAtEnd(65134);
+    t.insertAtEnd(1123);
+    t.insertAtEnd(1234);
+    t.insertAtEnd(324);
+    t.insertAtEnd(98);
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtEnd();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+    t.removeAtTheBeginning();
+    cout<<t.peek()<<endl;
+
 //    SinglyLinkedList<string> list;
 //    list.insertAtEnd("12");
 //    list.insertAtEnd("Mark");
@@ -42,15 +75,32 @@ int main()
 //Queue<string> q;
 //q.enqueue("Mark");
 //q.enqueue("Smth");
-//cout<<q.peek()<<endl;
 //q.dequeue();
-//cout<<q.peek()<<endl;
+//q.dequeue();
+//q.dequeue();
 
-//    SinglyLinkedList<int> list1;
-//    DoubleLinkedList<SinglyLinkedList<int>> dList;
-//    list1.insertAtTheBeginning(12);
-//    list1.insertAtEnd(53);
-//    dList.insertAtBeginning(list1);
+//Stack<int> p;
+//p.push(12);
+//p.push(43);
+//p.push(85);
+//cout<<p.peek()<<endl;
+//p.pop();
+//cout<<p.peek()<<endl;
+//p.pop();
+//cout<<p.peek()<<endl;
+
+//Stack<Mark> f;
+//f.push(Mark("First"));
+//f.push(Mark("Second"));
+//Mark first_stack = f.peek();
+//first_stack.displayName();
+//f.pop();
+//Mark seconst_stack = f.peek();
+//seconst_stack.displayName();
+
+//    SinglyLinkedList<string> list1;
+//    list1.insertAtEnd(12);
+//    cout<<list1<<endl;
 
 //    DoubleLinkedList<string> dList;
 //    dList.insertAtEnd("Mark");
@@ -65,4 +115,5 @@ int main()
 //    dList.insertAtBeginning("baobab");
 //    cout<<dList<<endl;
 //    cout<<dList[4]<<endl;
+    return 0;
 }
